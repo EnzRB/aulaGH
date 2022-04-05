@@ -1,5 +1,5 @@
 
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, FlatList } from "react-native";
 import Cabecalho from "./src/components/cabecalho";
 import Botao from "./src/components/botao";
 import Jogos from "./src/components/jogos";
