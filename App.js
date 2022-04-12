@@ -1,10 +1,12 @@
 
+import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, FlatList } from "react-native";
-import Cabecalho from "./src/components/cabecalho";
 import Botao from "./src/components/botao";
 import Jogos from "./src/components/jogos";
-import Dados from "./dados/dadosJogos.js"
-
+import Lancamento from "./src/components/lancamentos";
+import Dados from "./dados/dadosJogos.js";
+import DadosLancamento from "./dados/breve.js";
+import Cabecalho from "./src/components/cabecalho";
 
 export default function App() {
   return (
@@ -17,6 +19,9 @@ export default function App() {
       <Botao Logo="book-sharp" texto="Livros" cor="orange"
       Logo2 ="newspaper-outline" texto2="Noticias" cor2="blue" ></Botao>
      <View>
+       <Text style={{ fontSize: 22, marginTop: 52 }}> Jogos em destaque </Text>
+
+
        <FlatList
        horizontal={true}
        data = {Dados}
@@ -28,12 +33,28 @@ export default function App() {
         imagem = {item.imagem}
         valor = {item.valor}
         />
+
+        
        )}
 
        />
      </View>
+     <View>
+       <Text style={{ fontSize: 22, marginTop: 52 }}> Próximos Lançamentos </Text>
+       <FlatList
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            data={DadosLancamento}
+            keyExtractor={(item) => item.id}
+            renderItem={({ item }) => (
+              <Lancamento
+                titulo={item.nome}
+                imagem={item.imagem}
+                data={item.data}
+              />    
+       )}
+       />
      </View>
-
-     
+     </View>    
   );
 }
