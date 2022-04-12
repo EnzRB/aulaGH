@@ -47,6 +47,63 @@ const JOGOS = [
         valor : "37.99",
         imagem : "minecraft.png"
     },
+    {
+        id : "09",
+        nome : "Avakin Life",
+        valor : "Gratuito",
+        imagem : "avakin.jpg"
+    },
+    {
+        id : "10",
+        nome : "ONE PIECE: Fighting Path!",
+        valor : "Gratuito",
+        imagem : "OPFP.png"
+    },
+    {
+        id : "11",
+        nome : "World War Heroes",
+        valor : "Gratuito",
+        imagem : "world.png"
+    },
+    {
+        id : "12",
+        nome : "Pokémon Masters EX",
+        valor : "Gratuito",
+        imagem : "master.png"
+    },
+    {
+        id : "13",
+        nome : "Roblox",
+        valor : "Gratuito",
+        imagem : "roblox.png"
+    },
+    {
+        id : "14",
+        nome : "Slither.io",
+        valor : "Gratuito",
+        imagem : "slither.jpg"
+    },
+    {
+        id : "15",
+        nome : "ONE PIECE: Treasure Cruise",
+        valor : "Gratuito",
+        imagem : "OPTC.png"
+    },
+    {
+        id : "16",
+        nome : "Dragon City",
+        valor : "Gratuito",
+        imagem : "dragon.png"
+    },
+    {
+        id : "16",
+        nome : "Candy Crush Saga",
+        valor : "Gratuito",
+        imagem : "candy.png"
+    },
+
+
+        
 ]
 
 export default JOGOS;
